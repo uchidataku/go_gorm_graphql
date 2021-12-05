@@ -4,5 +4,9 @@ package model
 
 type Account struct {
 	ID   string `json:"id"`
-	Name string `json:"Name"`
+	Name string `json:"name"`
+}
+
+type CreateAccountInput struct {
+	Name string `json:"name"`
 }

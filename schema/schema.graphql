@@ -2,7 +2,15 @@ type Query {
     accounts: [Account!]
 }
 
+type Mutation {
+    createAccount(input: CreateAccountInput!): Account
+}
+
 type Account {
     id: ID!
-    Name: String!
+    name: String!
+}
+
+input CreateAccountInput {
+    name: String!
 }
